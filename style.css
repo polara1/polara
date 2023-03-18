@@ -1,0 +1,104 @@
+.box {
+    background-color: #f0fdff;
+    box-shadow: hsl(0, 0%, 80%) 0 0 16px;
+    border-radius: 4px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+head{
+    font-family: 'Raleway', sans-serif !important;
+    font-size: 18px !important;
+}
+
+body {
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 18px !important;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif !important;
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif !important;
+}
+
+.image{
+  height:300px;
+  width: 300px;
+}
+
+.rotate {
+    animation: rotation 5s;
+}
+
+@keyframes rotation {
+from {
+    transform: rotate(0deg);
+}
+to {
+    transform: rotate(359deg);
+}
+}
+
+.linear {
+    animation-timing-function: linear;
+}
+
+.infinite {
+    animation-iteration-count: infinite;
+}
+
+.rotate-image {
+    animation: rotation 2s linear infinite;
+}
+
+
+.footer-columns {
+    display: flex !important;
+    flex-wrap: wrap !important;
+}
+
+.footer-column {
+flex: 1 !important;
+margin: 0 1em !important;
+}
+
+.footer-column h4 {
+font-size: 1.2em !important;
+color: #e1e1e1 !important;
+}
+
+.footer-column ul {
+list-style: none !important;
+margin: 0 !important;
+padding: 0 !important;
+}
+
+.footer-column li {
+margin-bottom: 0.5em !important;
+color: #e1e1e1 !important;
+}
+
+.footer-column a {
+color: #e1e1e1 !important;
+text-decoration: none !important;
+}
+
+.footer-column a:hover {
+text-decoration: underline !important;
+}
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
